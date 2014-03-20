@@ -1,4 +1,4 @@
-/* Lamps
+/* Main
  ---------------------------------------------------------------------------- */
 body {
     height: 100%;
@@ -97,4 +97,35 @@ section {
 .page-header h1 {
     font-size: 46px;
     margin-bottom: 12px;
+}
+
+/* Responsive
+ ---------------------------------------------------------------------------- */
+@media (max-width: 560px) {
+    .box-inner-mobile {
+        padding: 30px 20px 40px 20px;
+    }
+
+    .lamps-list {
+        width: 260px;
+        height: 260px;
+    }
+    .lamp {
+        padding: 30px;
+    }
+
+}
+@media (max-width: 460px) {
+    .lamps-list {
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width: 410px) {
+    header,
+    .row,
+    .container {
+        width: 400px;
+    }
 }
