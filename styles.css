@@ -1,0 +1,131 @@
+/* Main
+ ---------------------------------------------------------------------------- */
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #EEE;
+}
+
+header {
+    background-color: #FFF;
+    border-bottom: 1px solid #357EBD;
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+section {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+    padding-top: 15px;
+}
+
+.box-inner {
+    margin: 15px 0;
+    min-height: 150px;
+    padding: 20px;
+}
+
+/* Lamps
+ ---------------------------------------------------------------------------- */
+
+[class*="nr"] {
+    position: absolute;
+}
+
+.nr-0 {left: 22%; top: 0;}
+.nr-1 {left: 66%; top: 0;}
+.nr-2 {left: 91%; top: 27%;}
+.nr-3 {left: 91%; top: 60%;}
+.nr-4 {left: 66%; top: 90%;}
+.nr-5 {left: 22%; top: 90%;}
+.nr-6 {left: -2%; top: 60%;}
+.nr-7 {left: -2%; top: 27%;}
+
+
+.lamps-list {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    margin: 17px auto;
+}
+
+.lamp {
+    display: block;
+    border-radius: 50%;
+    padding: 25px;
+    width: 1px;
+    height: 1px;
+    -webkit-transition: -webkit-transform 0.2s ease, background-color 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+
+    background-color: #EBEBEB;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    border: 0;
+    outline: none;
+}
+
+.lamp:hover {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.true {
+    background-color: #FFFF00;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* Bootstrap overwrite styles
+ ---------------------------------------------------------------------------- */
+
+.container .page-header {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.page-header h1 {
+    font-size: 46px;
+    margin-bottom: 12px;
+}
+
+/* Responsive
+ ---------------------------------------------------------------------------- */
+@media (max-width: 560px) {
+    .box-inner-mobile {
+        padding: 30px 20px 40px 20px;
+    }
+
+    .lamps-list {
+        width: 260px;
+        height: 260px;
+    }
+    .lamp {
+        padding: 30px;
+    }
+
+}
+@media (max-width: 460px) {
+    .lamps-list {
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width: 410px) {
+    header,
+    .row,
+    .container {
+        width: 400px;
+    }
+}
