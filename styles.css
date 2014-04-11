@@ -137,10 +137,17 @@ section {
 }
 
 @media (max-width: 400px) {
-    header,
+    header {
+        width: 100%;
+    }
     header .contianer,
     .row,
     .container {
+        width: 325px;
+    }
+}
+@media (max-width: 325px) {
+    header {
         width: 325px;
     }
 }
